@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+/* Sweep To Top */
+.headline{
+    display:flex;
+    background-color: #0071DF;
+    height: 30px;
+    width: 100vw;
+}
+.hvr-sweep-to-top {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+  .hvr-sweep-to-top:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #848d91b0;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-sweep-to-top:hover, .hvr-sweep-to-top:focus, .hvr-sweep-to-top:active {
+    color: white;
+  }
+  .hvr-sweep-to-top:hover:before,  .hvr-sweep-to-top:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+  .navh{
+    height:40px;
+}
+  .navtext{
+    color:#ffffff;
+    font-size: 18px;
+    font-family:'Roboto', sans-serif;
+  }
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    left: 61%;
+    margin-left: 5px;
+}
+.carousel-indicators {
+    position: absolute;
+    bottom: 8px;
+    
+}
+body{
+    overflow-x: hidden;
+    background-color: #292929;
+   
+}
+.navcus{
+    background-color: #292929;
+}
+
+.ccontent h1{
+    font-size: 55px;
+    font-family:'Poppins', sans-serif;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+    text-transform: uppercase;
+  
+    
+}
+.carousel-caption{
+    
+    position:absolute;
+    bottom: 20%;
+    left: 3%;
+}
+.btn2{
+    display:block;
+  height: 50px;
+  width: 240px;
+  border-radius: 40px;
+ 
+}
+.btn2 h6{position: relative;
+    font-family:'Poppins', sans-serif;
+    top: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+}
+.btn3{
+    position: relative;
+    bottom: 10px;
+height: 30px;
+border-radius: 50px;
+background-color:#0071DF;
+
+}
+.cus{
+    position: relative;
+    margin-top: 1px;
+    margin-left: 1px;
+}
+.btntext{
+    position: relative;
+    bottom: 5px;
+    color:#fff ;
+}
+
+.htext p{
+    display:flex;
+   background-color:#0071DF;
+justify-content: center;
+align-items: center;
+}
+@media (max-width: 1024px){
+    .ccontent h1{
+        font-size: 28px;
+        font-family:'Varela Round', sans-serif;
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+        text-transform: uppercase;
+        line-height: 1em;
+       
+        
+    }
+    .carousel-caption{
+        
+        position:absolute;
+        bottom: 20%;
+        left: 3%;
+    }
+    .btn2{
+        display:block;
+      height: 30px;
+      width: 130px;
+      border-radius: 40px;
+     
+    }
+    .btn2 h6{position: relative;
+        top: 4px;
+        font-size: 8px;
+        font-family:'Poppins', sans-serif;
+        font-weight: 700;
+        color: black;
+        text-transform: uppercase;
+    }
+    .headline{
+        display:flex;
+        background-color: #0071DF;
+        height: 15px;
+        width: 100vw;
+    }
+    .navh{
+        height:100%;
+    }
+    
+    }
+
+
+@media (max-width: 440px){
+    .navtext{
+      
+        font-size: 10px;
+        font-family:'Roboto', sans-serif;
+      }
+    .carousel-indicators li {
+        width: 6px;
+        height: 6px;
+        border-radius: 100%;
+        left: 57%;
+        margin-left: 0px;
+    }
+    .carousel-indicators {
+        position: absolute;
+        bottom: -5px;
+    }
+    .ccontent h1{
+        font-size: 12px;
+        font-family:'Varela Round', sans-serif;
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+        text-transform: uppercase;
+      line-height: .5em;
+       
+        
+    }
+    .carousel-caption{
+        
+        position:absolute;
+        bottom: 10%;
+        left: 3%;
+    }
+    .btn2{
+       display: flex;
+      height: 10px;
+      width: 80px;
+      border-radius: 40px;
+     
+    }
+    .btn2 h6{
+        position:relative;
+       font-weight: 700;
+       font-size:5px;
+       font-family:'Poppins', sans-serif;
+     top: -3px;
+     right: 7px;
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+    }
+    .btn3{
+        height: 20px;
+    }
+    .btntext{
+        font-size:10px;
+    }
+    .htext p{
+        font-size:10px;
+    }
+    .navh{
+        height:100%;
+    }
+}
+
