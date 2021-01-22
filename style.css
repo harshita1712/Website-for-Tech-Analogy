@@ -253,7 +253,7 @@
         position: relative;
         font-family:'Poppins', sans-serif;
         font-size: 7px;
-        bottom: 72%;
+         vertical-align: middle;
         color: #ffffff;
     }
 }
